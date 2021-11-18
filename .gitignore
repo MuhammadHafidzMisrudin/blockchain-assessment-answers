@@ -40,6 +40,11 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+section01/node_modules/
+blockchain-assessment-answers/section01/node_modules/
+/node_modules
+node_modules
+**/node_modules
 
 # TypeScript v1 declaration files
 typings/
