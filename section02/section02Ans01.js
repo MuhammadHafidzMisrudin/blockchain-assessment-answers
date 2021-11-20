@@ -31,7 +31,7 @@ class Account {
                 newBalance = this.balance + amount;
             }
             this.balance = newBalance;
-            console.log(`amount of deposit = ${amount}`);
+            console.log(`Amount of deposit = ${amount} is added in the account of ${this.name}`);
             return this.balance;
         };
         // function to set withdrawal.
@@ -41,7 +41,7 @@ class Account {
                 newBalance = this.balance - amount;
             }
             this.balance = newBalance;
-            console.log(`amount of withdrawal = ${amount}`);
+            console.log(`Amount of withdrawal = ${amount} is deducted from the account of ${this.name}`);
             return this.balance;
         };
         // function to display statement.
@@ -55,7 +55,11 @@ class Account {
 }
 // Demo the instances of the Account class.
 const accountA = new Account(1, "Hafidz", 3500);
+const accountB = new Account(2, "Inmaculada", 100);
+const accountC = new Account(3, "Lauren", 0);
 console.log(`${accountA.name}'s current balance = ${accountA.balance}'`);
+console.log(`${accountB.name}'s current balance = ${accountB.balance}'`);
+console.log(`${accountC.name}'s current balance = ${accountC.balance}'`);
 accountA.deposit(500);
 accountA.displayAccountStatement();
 accountA.withdraw(1000);
