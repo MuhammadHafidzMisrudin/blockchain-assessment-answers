@@ -34,6 +34,7 @@ class Account {
             console.log(`amount of deposit = ${amount}`);
             return this.balance;
         };
+        // function to set withdrawal.
         this.withdraw = (amount) => {
             let newBalance = 0;
             if (this.allowWithdraw(amount)) {
@@ -43,6 +44,7 @@ class Account {
             console.log(`amount of withdrawal = ${amount}`);
             return this.balance;
         };
+        // function to display statement.
         this.displayAccountStatement = () => {
             console.log(`${this.name}'s account. Balance: ${this.balance}`);
         };
