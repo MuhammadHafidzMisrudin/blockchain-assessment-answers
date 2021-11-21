@@ -78,3 +78,10 @@ accountA.deposit(500);
 accountA.displayAccountStatement();
 accountA.withdraw(1000);
 accountA.displayAccountStatement();
+
+accountB.displayAccountStatement();
+accountA.displayAccountStatement();
+accountC.displayAccountStatement();
+
+accountB.deposit(200);
+accountB.displayAccountStatement();
