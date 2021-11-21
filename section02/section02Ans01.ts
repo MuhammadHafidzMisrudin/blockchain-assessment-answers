@@ -43,7 +43,7 @@ class Account {
         if (this.positiveAmount(amount)) {
             newBalance = this.balance + amount;
         }
-        this.balance = newBalance
+        this.balance = newBalance;
         console.log(`Amount of deposit = ${amount} is added in the account of ${this.name}`);
         return this.balance;
     }
