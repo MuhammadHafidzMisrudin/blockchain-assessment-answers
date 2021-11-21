@@ -78,5 +78,6 @@ accountA.displayAccountStatement();
 accountC.displayAccountStatement();
 accountB.deposit(200);
 accountB.displayAccountStatement();
+// Demo DevAccount instance.
 const devAccountA = new DevAccount(4, "Mia", 900);
 devAccountA.displayAccountStatement();
