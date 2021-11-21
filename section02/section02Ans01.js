@@ -1,7 +1,7 @@
 "use strict";
 console.log("Solution 1 for Section 2 goes here.");
 class Account {
-    // constructor. 
+    // constructor.
     constructor(id, name, balance) {
         // function to check if the amount is positive.
         this.positiveAmount = (amount) => {
@@ -53,6 +53,15 @@ class Account {
         this.balance = balance;
     }
 }
+class DevAccount extends Account {
+    constructor(id, name, balance) {
+        super(id, name, balance);
+        this.displayAccountStatement = () => {
+            // super.displayAccountStatement();
+            console.log(`${this.name}'s account. Balance: ${this.balance}`);
+        };
+    }
+}
 // Demo the instances of the Account class.
 const accountA = new Account(1, "Hafidz", 3500);
 const accountB = new Account(2, "Inmaculada", 100);
@@ -69,3 +78,5 @@ accountA.displayAccountStatement();
 accountC.displayAccountStatement();
 accountB.deposit(200);
 accountB.displayAccountStatement();
+const devAccountA = new DevAccount(4, "Mia", 900);
+devAccountA.displayAccountStatement();
