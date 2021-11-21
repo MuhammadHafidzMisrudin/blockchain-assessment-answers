@@ -9,6 +9,7 @@ The solutions for the questions 1 & 2 are written in TypeScript.
 - Run cd to the directory of section01.
 - Run npm install.
 - Run npm start.
+- On the browser, inspect output in Developer Tools's Console.
 
 ## Section 2
 - Solution is in folder section02. File section02Ans01.ts.
@@ -16,3 +17,4 @@ The solutions for the questions 1 & 2 are written in TypeScript.
 - Run cd to the directory of section02.
 - Run npm install.
 - Run npm start.
+- On the browser, inspect output in Developer Tools's Console.
