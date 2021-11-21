@@ -1,6 +1,6 @@
 "use strict";
 console.log("Solution 1 and 2 for Section 2 goes here.");
-// Base class.
+// base class.
 class Account {
     // constructor.
     constructor(id, name, balance) {
@@ -54,13 +54,14 @@ class Account {
         this.balance = balance;
     }
 }
-// Derived class.
+// derived class.
 class DevAccount extends Account {
     // constructor.
     constructor(id, name, balance) {
         super(id, name, balance);
-        // initialise private fields
+        // initialise private fields.
         this._devAccountBalance = 0;
+        // transfer function to transfer amount to other account.
         this.transfer = (amount, account) => {
             let devAccountNewBalance = 0;
             if (this.withdraw(amount) > 0 && account.deposit(amount) > 0) {
@@ -87,7 +88,7 @@ class DevAccount extends Account {
         this._devAccountBalance = val;
     }
 }
-// Demo the instances of the Account class.
+// demo the instances of the Account class.
 const accountA = new Account(1, "Hafidz", 3500);
 const accountB = new Account(2, "Inmaculada", 100);
 const accountC = new Account(3, "Lauren", 0);
@@ -102,13 +103,13 @@ accountB.displayAccountStatement();
 accountC.displayAccountStatement();
 accountB.deposit(200);
 accountB.displayAccountStatement();
-// Demo DevAccount instance.
+// demo DevAccount instance.
 const devAccountA = new DevAccount(4, "Mia", 7000);
-// Current balance for dev account's.
+// current balance for dev account's.
 devAccountA.accountBalance = 7000;
 devAccountA.displayAccountStatement();
-// Dev account transfer to other account.
+// dev account transfer to other account.
 devAccountA.transfer(500, accountC);
-// Current balances for both accounts.
+// current balances for both accounts.
 devAccountA.displayAccountStatement();
 accountC.displayAccountStatement();
